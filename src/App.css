@@ -3,11 +3,6 @@
 	background-color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .logo {
 	height: 2%;
 	width: 4%;
@@ -26,12 +21,6 @@
 	padding-left: 10%;
 	height: 60px;
 	padding-top: 140px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -81,13 +70,4 @@
 .cart-icon {
 	height: 30px;
 	width: 30px;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

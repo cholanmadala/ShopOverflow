@@ -11,20 +11,17 @@ function App() {
 	const [selectedCategory, setSelectedCategory] = useState(0);
 	const [counter, setCounter] = useState(0);
 	const eventClickHandler = (eventId) => {
-		console.log('event clicked, this is inside App.js', eventId);
 		setSelectedEvent(eventId);
 		// when event changed, select the first category by default for the next event
 		setSelectedCategory(0);
 	}
 	const categoryClickHandler = (categoryId) => {
-		console.log('category clicked, this is inside App.js', categoryId);
 		setSelectedCategory(categoryId);
 	}
 
 	const productClickHandler = () => {
 		const newCounter = counter + 1;
 		setCounter(newCounter);
-		console.log('product add to cart clicked', counter);
 	}
 	return (
 		<div className="App">
@@ -39,7 +36,7 @@ function App() {
 				</div>
 			</header>
 			<header className="header2">
-				<h4>Our Brand New Event Driven AI based shopping experience is available now!!!</h4>
+				<h4>Welcome to ShopOverflow!!!! Our Brand New Event Driven AI based shopping experience is available now!!!</h4>
 			</header>
 			<EventContainer
 				eventData={data || []}
