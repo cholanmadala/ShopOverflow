@@ -1,9 +1,15 @@
 .category {
-	width: 275px;
-	height: 282px;
+	/* width: 275px;
+	height: 282px; */
+	width: 230px;
+	height: 240px;
 	margin: 10px;
 	font-size: .875rem;
 	font-family: BogleWeb,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.category :active{
+	border: 1px solid #041e42;
 }
 
 .category-img {

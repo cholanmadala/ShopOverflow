@@ -22,6 +22,3 @@ function Event({item, index, clickHandler}) {
 	);
 }
 export default Event;
-
-
-//

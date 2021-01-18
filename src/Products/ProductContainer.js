@@ -2,7 +2,7 @@ import React from 'react';
 import Product from './Product';
 import './ProductContainer.css';
 
-function ProductContainer({ clickHandler, productData }) {
+function ProductContainer({ clickHandler, productData, selectedCategoryName='products' }) {
 	const getProductData = () => {
 		const productDataMarkUp = productData.map((item, index) => {
 			return (
@@ -14,7 +14,7 @@ function ProductContainer({ clickHandler, productData }) {
 
 	return productData ? (
 		<div>
-			<h1> Add the below products to your cart </h1>
+			<h1> {`${selectedCategoryName} handpicked for you!`} </h1>
 			<div className="product-container">
 				{getProductData()}
 			</div>

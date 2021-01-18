@@ -36,17 +36,19 @@ function App() {
 				</div>
 			</header>
 			<header className="header2">
-				<h4>Welcome to ShopOverflow!!!! Our Brand New Event Driven AI based shopping experience is available now!!!</h4>
+				<h4>Welcome to ShopOverflow!!!! Our Brand New Event driven Shopping experience is available now!!!</h4>
 			</header>
 			<EventContainer
 				eventData={data || []}
 				clickHandler={eventClickHandler}
 			/>
 			<CategoryContainer
+				selectedEventName={data[selectedEvent]['event-name']}
 				categoryData={data[selectedEvent].categories || []}
 				clickHandler={categoryClickHandler}
 			/>
 			<ProductContainer
+				selectedCategoryName={data[selectedEvent].categories[selectedCategory]['category-name']}
 				productData={data[selectedEvent].categories[selectedCategory].products || [] }
 				clickHandler={productClickHandler}
 			/>
