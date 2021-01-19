@@ -41,9 +41,11 @@ function App() {
 			<EventContainer
 				eventData={data || []}
 				clickHandler={eventClickHandler}
+				selectedEventIndex={selectedEvent}
 			/>
 			<CategoryContainer
 				selectedEventName={data[selectedEvent]['event-name']}
+				selectedCategoryIndex={selectedCategory}
 				categoryData={data[selectedEvent].categories || []}
 				clickHandler={categoryClickHandler}
 			/>

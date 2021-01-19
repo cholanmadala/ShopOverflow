@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Event.css';
 
-function Event({item, index, clickHandler}) {
+function Event({ item, index, clickHandler, isSelectedEvent}) {
 	const handleClick = (ev) => {
 		clickHandler(ev);
 	}
@@ -16,6 +16,7 @@ function Event({item, index, clickHandler}) {
 				className="event-img"
 				src={item['event-image-name']}
 				alt={`event-${customIndex.toString()}`}
+				style={{ border: isSelectedEvent ? '2px solid #0471dc' : '' }}
 			/>
 			<span>{item['event-name']}</span>
 		</div>

@@ -3,6 +3,10 @@
 	background-color: #fff;
 }
 
+h1 {
+	text-transform: capitalize;
+}
+
 .logo {
 	height: 2%;
 	width: 4%;

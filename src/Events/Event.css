@@ -4,6 +4,7 @@
 	margin: 10px;
 	font-size: .875rem;
 	font-family: BogleWeb,Helvetica Neue,Helvetica,Arial,sans-serif;
+	cursor: pointer;
 }
 .event :active {
 	border: 1px solid #041e42;
@@ -11,4 +12,5 @@
 .event-img {
 	width: 100%;
 	height: 90%;
+	border-radius: 100%;
 }

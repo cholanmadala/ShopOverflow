@@ -14,7 +14,7 @@ function ProductContainer({ clickHandler, productData, selectedCategoryName='pro
 
 	return productData ? (
 		<div>
-			<h1> {`${selectedCategoryName} handpicked for you!`} </h1>
+			<h1> {`${selectedCategoryName.toLowerCase()} Picks!!`} </h1>
 			<div className="product-container">
 				{getProductData()}
 			</div>

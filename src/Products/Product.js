@@ -6,10 +6,13 @@ function Product({ item, index, clickHandler }) {
 
 	return (
 		<div className="product" key={`${item}-${index}`}>
+			<span className={index < 8 && index % 2 === 0 ? "best-seller-badge" : "special-buy"}>
+				{index < 8 && index % 2 === 0 ? "Best Seller" : "Special Buy"}
+			</span>
 			{/* <img className="event-img" src={`event-${customIndex.toString()}-img.jpeg`} alt={`event-${customIndex.toString()}`}/> */}
-			<img src={item['product-image-name']} alt="image" className="product-img" />
+			<img src={item['product-image-name']} alt="product-icon" className="product-img" />
 			<span>
-					<a href={`http://walmart.com/ip/${item['product-id']}`} target='_blank'>
+					<a className="anchor-tag" href={`http://walmart.com/ip/${item['product-id']}`} target='_blank'>
 							{item['product-name']}
 					</a>
 			</span>
