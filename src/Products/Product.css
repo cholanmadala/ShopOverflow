@@ -73,10 +73,10 @@
 		font-size: .75rem;
 		color: #00479e;
 		width: 70px;
-		margin-left: 15px;
+		margin-left: 10px;
 }
 
-.special-buy {
+.special-buy-badge {
 	background: #e6f1fc;
     border-radius: 2px;
     display: inline-block;
@@ -87,5 +87,10 @@
 		font-size: .75rem;
 		color: #00479e;
 		width: 70px;
-		margin-left: 15px;
+		margin-left: 10px;
+}
+
+.empty-badge {
+	padding-top:20px;
+	display: inline-block;
 }

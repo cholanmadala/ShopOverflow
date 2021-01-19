@@ -3,13 +3,13 @@ import Rating from './Rating';
 import './Product.css';
 
 function Product({ item, index, clickHandler }) {
-
 	return (
 		<div className="product" key={`${item}-${index}`}>
-			<span className={index < 8 && index % 2 === 0 ? "best-seller-badge" : "special-buy"}>
-				{index < 8 && index % 2 === 0 ? "Best Seller" : "Special Buy"}
-			</span>
-			{/* <img className="event-img" src={`event-${customIndex.toString()}-img.jpeg`} alt={`event-${customIndex.toString()}`}/> */}
+			{
+				index === 0 || index === 8 ?
+					<span className="best-seller-badge"> {index === 0 ? "Best Seller" : "Special Buy"} </span> :
+					<span className="empty-badge"></span>
+			}
 			<img src={item['product-image-name']} alt="product-icon" className="product-img" />
 			<span>
 					<a className="anchor-tag" href={`http://walmart.com/ip/${item['product-id']}`} target='_blank'>
